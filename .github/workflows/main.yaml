@@ -1,0 +1,17 @@
+name: Vercel Workflow
+
+# Trigger
+on: 
+  push:
+    - 'release/***'
+
+# Jobs
+jobs:
+  # Job name
+    vercel-workflow-filter:
+      runs-on: ubuntu-latest
+
+    # List of steps to perform task
+      steps:
+      - name: Echo the date
+        run: echo "The curren time and date in Github is $(date)"
