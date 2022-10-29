@@ -3,6 +3,7 @@ name: Vercel Workflow
 # Trigger
 on: 
   push:
+    branches:
     - 'release/***'
 
 # Jobs
