@@ -15,7 +15,7 @@ jobs:
     # List of steps to perform task
       steps:
       - name: Echo the date
-        run: echo "The curren time and date in Github is $(date)"
+        run: echo "The current time and date in Github is $(date)"
       - name: Echo the branch name
         run: echo "current branch - ${{ github.ref-name }}"
       - name: Checkout the branch
